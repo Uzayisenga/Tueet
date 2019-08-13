@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="navbar">
+<a href="#" class="active">Home</a>
+<a href="#">Login</a>
+<a href="#">SignUp</a>
+<a href="#" class="right">Link</a>
+
+</div>
+
+<p id="notice"><%= notice %></p>
+
+<h1>New Twittter</h1>
+
+<%= render 'form', twittter: @twittter %>
+
+<%= link_to 'Back', twittters_path %>
+<div class="footer">
+<h2>All right resrved@TweeterClone</h2>
+</div>
+
+</body>
+</html>

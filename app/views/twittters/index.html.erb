@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="navbar">
+<a href="#" class="active">Home</a>
+<a href="#">Login</a>
+<a href="#">SignUp</a>
+
+</div>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Tweets</h1>
+
+
+
+    <% @twittters.each do |twittter| %>
+   
+      <p><%= twittter.content %></p>
+       <button> <%= link_to 'Show', twittter %></button>
+        <button><%= link_to 'Edit', edit_twittter_path(twittter) %></button>
+      <button><%= link_to 'Destroy', twittter, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+   
+    <% end %>
+
+
+<br>
+
+<%= link_to 'New Twittter', new_twittter_path %>
+<div class="footer">
+  <h2>All right resrved@TweeterClone</h2>
+</div>
+
+</body>
+</html>
