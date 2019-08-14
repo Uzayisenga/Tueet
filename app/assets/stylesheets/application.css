@@ -13,12 +13,10 @@
  *= require_tree .
  *= require_self
  */
- <style>
- * {
-   box-sizing: border-box;
- }
+
+
  
- /* Style the body */
+ /* Style the bod */
  body {
    font-family: Arial, Helvetica, sans-serif;
    margin: 60px;
@@ -133,4 +131,3 @@
      width: 50%;
    }
  }
- </style>
