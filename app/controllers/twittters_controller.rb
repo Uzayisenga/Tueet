@@ -4,7 +4,7 @@ class TwitttersController < ApplicationController
   # GET /twittters
   # GET /twittters.json
   def index
-    @twittter = Twittter.all
+    @twittters = Twittter.all
   end
 
   # GET /twittters/1
